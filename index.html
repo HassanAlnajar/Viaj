@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وثيقة توثيق لغوي — كلمة فَيَّجَ</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700;900&display=swap');
+
+- { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+font-family: ‘Cairo’, ‘Segoe UI’, Tahoma, Arial, sans-serif;
+background: #f0ece3;
+color: #1a1a2e;
+direction: rtl;
+}
+
+.page {
+max-width: 820px;
+margin: 40px auto;
+background: #fffdf8;
+border: 1px solid #d4c9a8;
+box-shadow: 0 4px 40px rgba(0,0,0,0.15);
+position: relative;
+overflow: hidden;
+}
+
+/* Decorative border */
+.page::before {
+content: ‘’;
+position: absolute;
+top: 12px; left: 12px; right: 12px; bottom: 12px;
+border: 2px solid #c9a84c;
+pointer-events: none;
+z-index: 10;
+}
+
+.page::after {
+content: ‘’;
+position: absolute;
+top: 18px; left: 18px; right: 18px; bottom: 18px;
+border: 1px solid #e8d08a;
+pointer-events: none;
+z-index: 10;
+}
+
+/* Header */
+.header {
+background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+padding: 50px 60px 40px;
+text-align: center;
+position: relative;
+}
+
+.header-ornament {
+font-size: 28px;
+color: #c9a84c;
+letter-spacing: 8px;
+margin-bottom: 20px;
+display: block;
+}
+
+.doc-type {
+font-size: 11px;
+color: #c9a84c;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-bottom: 16px;
+font-weight: 300;
+}
+
+.main-title {
+font-family: ‘Amiri’, serif;
+font-size: 52px;
+color: #ffffff;
+font-weight: 700;
+margin-bottom: 8px;
+text-shadow: 0 2px 20px rgba(201,168,76,0.4);
+}
+
+.main-title span {
+color: #c9a84c;
+}
+
+.subtitle {
+font-size: 15px;
+color: #a8b8d8;
+font-weight: 300;
+margin-bottom: 24px;
+}
+
+.doc-number {
+display: inline-block;
+background: rgba(201,168,76,0.15);
+border: 1px solid rgba(201,168,76,0.4);
+color: #c9a84c;
+padding: 6px 20px;
+font-size: 12px;
+letter-spacing: 2px;
+border-radius: 2px;
+}
+
+/* Divider */
+.golden-divider {
+display: flex;
+align-items: center;
+padding: 0 60px;
+margin: 0;
+background: #f7f2e8;
+height: 36px;
+}
+
+.golden-divider::before,
+.golden-divider::after {
+content: ‘’;
+flex: 1;
+height: 1px;
+background: linear-gradient(to left, transparent, #c9a84c);
+}
+
+.golden-divider::after {
+background: linear-gradient(to right, transparent, #c9a84c);
+}
+
+.diamond {
+width: 10px;
+height: 10px;
+background: #c9a84c;
+transform: rotate(45deg);
+margin: 0 12px;
+flex-shrink: 0;
+}
+
+/* Content */
+.content {
+padding: 40px 65px 50px;
+}
+
+/* Info bar */
+.info-bar {
+display: flex;
+justify-content: space-between;
+background: #f0ece3;
+border: 1px solid #d4c9a8;
+border-radius: 4px;
+padding: 16px 24px;
+margin-bottom: 40px;
+font-size: 13px;
+color: #555;
+}
+
+.info-bar .item strong {
+color: #1a1a2e;
+font-weight: 700;
+}
+
+.info-bar .item {
+text-align: center;
+}
+
+/* Section */
+.section {
+margin-bottom: 36px;
+}
+
+.section-title {
+font-size: 13px;
+font-weight: 700;
+color: #c9a84c;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 16px;
+padding-bottom: 8px;
+border-bottom: 1px solid #e8d08a;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.section-title::before {
+content: ‘’;
+width: 4px;
+height: 16px;
+background: #c9a84c;
+display: inline-block;
+border-radius: 2px;
+}
+
+.definition-box {
+background: linear-gradient(135deg, #1a1a2e, #0f3460);
+border-right: 4px solid #c9a84c;
+padding: 24px 28px;
+border-radius: 4px;
+margin-bottom: 20px;
+}
+
+.definition-box .word-display {
+font-family: ‘Amiri’, serif;
+font-size: 40px;
+color: #c9a84c;
+font-weight: 700;
+display: block;
+margin-bottom: 8px;
+}
+
+.definition-box .root {
+font-size: 13px;
+color: #a8b8d8;
+}
+
+.definition-box .root span {
+color: #ffffff;
+font-weight: 600;
+}
+
+/* Morphology table */
+.morph-table {
+width: 100%;
+border-collapse: collapse;
+font-size: 14px;
+}
+
+.morph-table th {
+background: #1a1a2e;
+color: #c9a84c;
+padding: 10px 16px;
+font-weight: 600;
+font-size: 12px;
+letter-spacing: 1px;
+text-align: right;
+}
+
+.morph-table td {
+padding: 11px 16px;
+border-bottom: 1px solid #e8e0d0;
+}
+
+.morph-table tr:nth-child(even) td {
+background: #f9f6ef;
+}
+
+.morph-table tr:last-child td {
+border-bottom: none;
+}
+
+.morph-table td:first-child {
+color: #555;
+font-size: 13px;
+}
+
+.morph-table td.word {
+font-family: ‘Amiri’, serif;
+font-size: 22px;
+color: #1a1a2e;
+font-weight: 700;
+}
+
+.morph-table td.pattern {
+color: #888;
+font-size: 13px;
+direction: ltr;
+text-align: left;
+}
+
+/* Meaning pills */
+.meanings-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.meaning-pill {
+background: #f0ece3;
+border: 1px solid #c9a84c;
+color: #1a1a2e;
+padding: 8px 18px;
+border-radius: 20px;
+font-size: 14px;
+font-weight: 600;
+}
+
+.meaning-pill.highlight {
+background: #1a1a2e;
+color: #c9a84c;
+}
+
+/* Special usage box */
+.special-box {
+background: #fff9ee;
+border: 1px solid #e8d08a;
+border-radius: 4px;
+padding: 20px 24px;
+margin-top: 16px;
+}
+
+.special-box .label {
+font-size: 11px;
+font-weight: 700;
+color: #c9a84c;
+letter-spacing: 2px;
+margin-bottom: 10px;
+display: block;
+}
+
+.special-box .phrase {
+font-family: ‘Amiri’, serif;
+font-size: 28px;
+color: #1a1a2e;
+font-weight: 700;
+display: block;
+margin-bottom: 8px;
+}
+
+.special-box p {
+font-size: 14px;
+color: #444;
+line-height: 1.8;
+}
+
+/* Joker card visual */
+.joker-desc {
+background: linear-gradient(135deg, #1a1a2e, #16213e);
+border-radius: 6px;
+padding: 24px 28px;
+color: #fff;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.joker-icon {
+font-size: 44px;
+flex-shrink: 0;
+}
+
+.joker-text {
+font-size: 14px;
+line-height: 1.9;
+color: #c8d8f0;
+}
+
+.joker-text strong {
+color: #c9a84c;
+}
+
+/* Footer */
+.footer {
+background: #1a1a2e;
+padding: 28px 65px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 12px;
+}
+
+.footer .seal {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.seal-circle {
+width: 48px;
+height: 48px;
+border-radius: 50%;
+border: 2px solid #c9a84c;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #c9a84c;
+font-size: 18px;
+font-family: ‘Amiri’, serif;
+font-weight: 700;
+}
+
+.footer-text {
+color: #a8b8d8;
+}
+
+.footer-text strong {
+display: block;
+color: #c9a84c;
+font-size: 13px;
+margin-bottom: 2px;
+}
+
+.footer-date {
+color: #c9a84c;
+text-align: left;
+}
+
+.footer-date span {
+display: block;
+color: #a8b8d8;
+font-size: 11px;
+}
+
+/* Print */
+@media print {
+body { background: white; }
+.page { margin: 0; box-shadow: none; border: none; }
+.page::before, .page::after { border-color: #c9a84c; }
+}
+
+/* Watermark */
+.watermark {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(-30deg);
+font-size: 110px;
+color: rgba(201,168,76,0.035);
+font-family: ‘Amiri’, serif;
+font-weight: 700;
+pointer-events: none;
+z-index: 1;
+white-space: nowrap;
+}
+</style>
+
+</head>
+<body>
+<div class="page">
+
+  <div class="watermark">فَيَّجَ</div>
+
+  <!-- Header -->
+
+  <div class="header">
+    <span class="header-ornament">✦ ✦ ✦</span>
+    <div class="doc-type">وثيقة توثيق لغوي رسمية</div>
+    <div class="main-title">فَيَّجَ <span>·</span> يُفَيِّج</div>
+    <div class="subtitle">ابتكار لغوي عربي أصيل — توثيق صرفي ودلالي كامل</div>
+    <div class="doc-number">DOC-LING-2026-001 · ف ي ج</div>
+    <div style="margin-top:12px;">
+      <a href="https://zenodo.org/records/19380743" style="color:#a8b8d8; font-size:12px; letter-spacing:1px; text-decoration:none; border-bottom:1px solid rgba(168,184,216,0.4); padding-bottom:2px;">
+        zenodo.org/records/19380743
+      </a>
+    </div>
+  </div>
+
+  <!-- Divider -->
+
+  <div class="golden-divider"><div class="diamond"></div></div>
+
+  <!-- Content -->
+
+  <div class="content">
+
+```
+<!-- Info bar -->
+<div class="info-bar">
+  <div class="item">
+    <div>تاريخ التوثيق</div>
+    <strong>٢ أبريل ٢٠٢٦</strong>
+  </div>
+  <div class="item">
+    <div>اللغة</div>
+    <strong>العربية</strong>
+  </div>
+  <div class="item">
+    <div>الجذر</div>
+    <strong>ف · ي · ج</strong>
+  </div>
+  <div class="item">
+    <div>الوزن الصرفي</div>
+    <strong>فَعَّلَ</strong>
+  </div>
+  <div class="item">
+    <div>المصدر</div>
+    <strong>حسن النجار وأصدقاؤه — ٢٠٢٦</strong>
+  </div>
+</div>
+
+<!-- Word display -->
+<div class="section">
+  <div class="section-title">هوية الكلمة</div>
+  <div class="definition-box">
+    <span class="word-display">فَيَّجَ</span>
+    <div class="root">الجذر: <span>ف – ي – ج</span> &nbsp;|&nbsp; الوزن: <span>فَعَّلَ</span> &nbsp;|&nbsp; بنية: <span>ثلاثي مزيد بالتضعيف</span></div>
+  </div>
+</div>
+
+<!-- Morphology -->
+<div class="section">
+  <div class="section-title">الجدول الصرفي الكامل</div>
+  <table class="morph-table">
+    <thead>
+      <tr>
+        <th>الوظيفة النحوية</th>
+        <th>الصيغة</th>
+        <th>الوزن الصرفي</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>الفعل اللازم (يقع على صاحبه)</td>
+        <td class="word">تَفَيَّجَ</td>
+        <td class="pattern">تَفَعَّلَ</td>
+      </tr>
+      <tr>
+        <td>الفعل الماضي</td>
+        <td class="word">فَيَّجَ</td>
+        <td class="pattern">فَعَّلَ</td>
+      </tr>
+      <tr>
+        <td>الفعل المضارع</td>
+        <td class="word">يُفَيِّج</td>
+        <td class="pattern">يُفَعِّل</td>
+      </tr>
+      <tr>
+        <td>فعل الأمر</td>
+        <td class="word">فَيِّجْ</td>
+        <td class="pattern">فَعِّل</td>
+      </tr>
+      <tr>
+        <td>المصدر القياسي</td>
+        <td class="word">تَفْيِيج</td>
+        <td class="pattern">تَفْعِيل</td>
+      </tr>
+      <tr>
+        <td>المصدر العامي</td>
+        <td class="word">فِياج</td>
+        <td class="pattern">فِعَال</td>
+      </tr>
+      <tr>
+        <td>اسم الفاعل / الصفة</td>
+        <td class="word">فَايِج</td>
+        <td class="pattern">فَاعِل</td>
+      </tr>
+      <tr>
+        <td>صيغة المبالغة</td>
+        <td class="word">فَيَّاج</td>
+        <td class="pattern">فَعَّال</td>
+      </tr>
+      <tr>
+        <td>اسم فعل — تعبير مستقل</td>
+        <td class="word">فِياجَك!</td>
+        <td class="pattern">اسم فعل + ضمير</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Meaning -->
+<div class="section">
+  <div class="section-title">الحقل الدلالي</div>
+  <div class="joker-desc">
+    <div class="joker-icon">🃏</div>
+    <div class="joker-text">
+      الكلمة <strong>بطاقة جوكر دلالية</strong> — تعبير مركّب ذو طاقة توكيدية ذاتية،
+      لا يحتاج إلى تأكيد خارجي لأنه يحمل قوة التأكيد في بنيته.
+      يعبّر عن معانٍ متعددة في آنٍ واحد بحسب السياق.
+    </div>
+  </div>
+
+  <div class="special-box" style="margin-top:16px; border-color:#1a1a2e; background:#f4f1ff;">
+    <span class="label" style="color:#1a1a2e;">◆ ملاحظة لغوية — عمق الكلمة</span>
+    <p style="font-size:14px; line-height:2; color:#333;">
+      هذه الكلمة تنتمي إلى فئة نادرة تُسمى لغوياً <strong>"غير القابل للترجمة"</strong> —
+      أي أن معناها الكامل لا يمكن نقله بكلمة مفردة في أي لغة أخرى.
+      معناها الحقيقي يتشكّل من السياق، ونبرة الصوت، والموقف —
+      وهذا ما يجعلها كلمة حيّة وعميقة لا مجرد تعبير عامي.
+    </p>
+  </div>
+  <br>
+  <div class="meanings-grid">
+    <div class="meaning-pill highlight">الكذب</div>
+    <div class="meaning-pill highlight">الفاشل</div>
+    <div class="meaning-pill">الهذيان</div>
+    <div class="meaning-pill">الهراء</div>
+    <div class="meaning-pill">الاستهزاء</div>
+    <div class="meaning-pill">الخطأ الفاحش</div>
+    <div class="meaning-pill">الوقوع في مشكلة</div>
+    <div class="meaning-pill">الكلام الفارغ</div>
+    <div class="meaning-pill">الشخص الكرنج</div>
+    <div class="meaning-pill">المبالغ في الكلام بلا داعٍ</div>
+    <div class="meaning-pill">المتناقض في أقواله وأفعاله</div>
+    <div class="meaning-pill">المتصرف بغرابة في مواقف عادية</div>
+    <div class="meaning-pill">من يُحرج نفسه بنفسه</div>
+    <div class="meaning-pill">المدّعي لما ليس فيه</div>
+    <div class="meaning-pill">الثرثار الفارغ</div>
+  </div>
+</div>
+
+<!-- Special usage -->
+<div class="section">
+  <div class="section-title">الاستخدام الاصطلاحي الخاص</div>
+  <div class="special-box">
+    <span class="label">◆ تعبير مستقل موثّق</span>
+    <span class="phrase">فِياجَك!</span>
+    <p>
+      اسم فعل مركّب يُسكت المخاطَب ويُكذّبه في آنٍ واحد. يختلف عن "اخرس" بأنه يحمل
+      دلالة التكذيب والاستهزاء معاً — فيه إسكات للكلام ورفض للمضمون في وقت واحد.
+      هو تعبير توقيفي كافٍ بذاته لإنهاء الحديث.
+    </p>
+  </div>
+</div>
+
+<!-- Examples -->
+<div class="section">
+  <div class="section-title">نماذج استخدام</div>
+  <table class="morph-table">
+    <thead>
+      <tr>
+        <th>الجملة</th>
+        <th>الوظيفة</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="word" style="font-size:18px;">هذا شخصٌ فَايِج</td>
+        <td>صفة — معناها يُفهم من السياق: فاشل، كاذب، مهذارٌ، أو غير ذلك</td>
+      </tr>
+      <tr>
+        <td class="word" style="font-size:18px;">تَفَيَّجتُ أمس</td>
+        <td>فعل ماضٍ لازم — وقعت في مشكلة / تدهور حالي / انهارت الأمور</td>
+      </tr>
+      <tr>
+        <td class="word" style="font-size:18px;">لا تُفَيِّج!</td>
+        <td>نهي صريح — توقف عمّا تفعله / لا تستمر بهذا الخطأ / كفى — حسب السياق</td>
+      </tr>
+      <tr>
+        <td class="word" style="font-size:18px;">فِياجَك!</td>
+        <td>اسم فعل — إسكات + تكذيب فوري</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+  </div>
+
+  <!-- Footer -->
+
+  <div class="footer">
+    <div class="seal">
+      <div class="seal-circle">و</div>
+      <div class="footer-text">
+        <strong>وثيقة توثيق لغوي</strong>
+        حسن النجار وأصدقاؤه
+      </div>
+    </div>
+    <div class="footer-date">
+      <strong style="color:#c9a84c; font-size:15px;">٢ أبريل ٢٠٢٦</strong>
+      <span>DOC-LING-2026-001</span>
+      <span style="margin-top:2px;">جميع الحقوق محفوظة لأصحاب الاختراع</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
